@@ -1,0 +1,14 @@
+{
+    "name": {
+        "ar": "gpt",
+        "en": "gptghf"
+    },
+    "description": {
+        "ar": "",
+        "en": ""
+    },
+    "author_email": "abdulrhman.s.algamdi.22@gmail.com",
+    "support_url": "https://portal.salla.partners/auth/cli?identify=lc4EI2INsmZh2HzpsZ3yYizfEKwruiMZtur66hY4toADicakmhvkshp8dEoTLrPt",
+    "repository": "https://github.com/ABODAH1234/tw-gptghf",
+    "components": []
+}
