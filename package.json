@@ -1,21 +1,16 @@
 {
-    "name": "tw-gptghf",
-    "version": "1.0.0",
-    "description": "",
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "preview": "vite preview"
-    },
-    "devDependencies": {
-        "@salla.sa/twilight-bundles": "^0.1.0",
-        "vite": "^5.0.0"
-    },
-    "author": "abdulrhman.s.algamdi.22@gmail.com",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ABODAH1234/tw-gptghf"
-    },
-    "private": true
+  "name": "pmp-twilight-storefront",
+  "version": "1.1.0",
+  "description": "Power Match Performance storefront components for Salla Twilight",
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview" },
+  "dependencies": { "lit": "^3.3.1" },
+  "devDependencies": {
+    "@salla.sa/twilight-bundles": "^0.1.53",
+    "typescript": "^5.8.3",
+    "vite": "^5.4.19"
+  },
+  "author": "Power Match Performance",
+  "repository": { "type": "git", "url": "https://github.com/ABODAH1234/tw-gptghf" },
+  "private": true
 }
