@@ -1,14 +1,30 @@
 {
-    "name": {
-        "ar": "gpt",
-        "en": "gptghf"
-    },
-    "description": {
-        "ar": "",
-        "en": ""
-    },
-    "author_email": "abdulrhman.s.algamdi.22@gmail.com",
-    "support_url": "https://portal.salla.partners/auth/cli?identify=lc4EI2INsmZh2HzpsZ3yYizfEKwruiMZtur66hY4toADicakmhvkshp8dEoTLrPt",
-    "repository": "https://github.com/ABODAH1234/tw-gptghf",
-    "components": []
+  "name": { "ar": "واجهة باور ماتش", "en": "PMP Storefront" },
+  "description": {
+    "ar": "واجهة رئيسية احترافية لمتجر Power Match Performance",
+    "en": "Performance automotive storefront for Power Match Performance"
+  },
+  "author_email": "",
+  "support_url": "",
+  "repository": "https://github.com/ABODAH1234/tw-gptghf",
+  "components": [
+    {
+      "title": "واجهة باور ماتش الرئيسية",
+      "icon": "sicon-store",
+      "name": "pmp-storefront",
+      "key": "5aa40fd0-e6ef-4b90-bfa6-9111c09daec8",
+      "image": "https://cdn.salla.network/images/themes/default/placeholder.jpg",
+      "fields": [
+        { "id": "announcement", "type": "string", "label": "الشريط العلوي", "format": "text", "value": "شحن لجميع مناطق المملكة • قطع أداء أصلية ومختارة بعناية" },
+        { "id": "hero_badge", "type": "string", "label": "العنوان الصغير", "format": "text", "value": "POWER MATCH PERFORMANCE" },
+        { "id": "hero_title", "type": "string", "label": "عنوان البنر", "format": "text", "value": "القطعة الصح. للأداء الصح." },
+        { "id": "hero_description", "type": "string", "label": "وصف البنر", "format": "textarea", "value": "قطع أداء مختارة للمحركات الأمريكية واليابانية، مع توافق واضح ودعم فني يساعدك تختار من أول مرة." },
+        { "id": "primary_button", "type": "string", "label": "نص الزر الرئيسي", "format": "text", "value": "ابدأ حسب محركك" },
+        { "id": "primary_url", "type": "string", "label": "رابط الزر الرئيسي", "format": "url", "value": "#engine-families" },
+        { "id": "whatsapp_url", "type": "string", "label": "رابط واتساب", "format": "url", "value": "" },
+        { "id": "support_email", "type": "string", "label": "بريد الدعم", "format": "email", "value": "" },
+        { "id": "commercial_registration", "type": "string", "label": "السجل التجاري", "format": "text", "value": "" }
+      ]
+    }
+  ]
 }
