@@ -1,0 +1,77 @@
+{#
+| Variable         | Type       | Description                                                         |
+|------------------|------------|---------------------------------------------------------------------|
+| page             | object     |                                                                     |
+| page.title       | string     | *could be html                                                      |
+| page.slug        | string     | ex: "cat.show"                                                      |
+#}
+{% extends "layouts.master" %}
+{% block content %}
+<div class="pmp-home">
+  <section class="pmp-hero">
+    <div class="pmp-shell pmp-hero__content">
+      <span class="pmp-eyebrow">POWER MATCH PERFORMANCE</span>
+      <h1>باور ماتش<br><em>لأداء أقوى.</em></h1>
+      <p>قطع أداء وتعديل مختارة للمحركات الأمريكية واليابانية، مع توافق واضح ودعم فني قبل الطلب.</p>
+      <div class="pmp-actions">
+        <a class="pmp-button pmp-button--primary" href="{{ link('products') }}">تسوق جميع القطع</a>
+        <button class="pmp-button pmp-button--outline" onclick="salla.event.dispatch('search::open')">ابحث عن قطعة</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="pmp-trust"><div class="pmp-shell pmp-trust__grid">
+    <div><b>قطع أصلية</b><small>مصادر وعلامات موثوقة</small></div>
+    <div><b>توافق دقيق</b><small>حسب المحرك والمركبة</small></div>
+    <div><b>شحن محسوب</b><small>تكلفة واضحة للعميل</small></div>
+    <div><b>دعم متخصص</b><small>قبل وبعد الشراء</small></div>
+  </div></div>
+
+  <section class="pmp-finder"><div class="pmp-shell pmp-finder__grid">
+    <div><span class="pmp-eyebrow pmp-eyebrow--dark">FIND YOUR PART</span><h2>ابدأ برقم القطعة أو اسمها</h2><p>اكتب رقم القطعة، الشركة، المحرك أو المركبة للوصول إلى النتائج بسرعة.</p></div>
+    <div class="pmp-finder__search"><h3>البحث في متجر PMP</h3><salla-search inline oval height="54"></salla-search><small>مثال: BTR Camshaft، HEMI 6.4، LS3، ARP</small></div>
+  </div></section>
+
+  <section class="pmp-section"><div class="pmp-shell">
+    <header class="pmp-section__head"><div><span class="pmp-eyebrow">SHOP BY ENGINE</span><h2>تسوق حسب المحرك</h2></div><a href="{{ link('products') }}">كل المنتجات</a></header>
+    <div class="pmp-engine-grid">
+      <a href="{{ link('search') }}?q=HEMI%205.7"><i>MOPAR</i><b>HEMI 5.7</b><small>Cam • MDS • Valvetrain</small></a>
+      <a href="{{ link('search') }}?q=HEMI%206.4"><i>MOPAR</i><b>HEMI 6.4 / 392</b><small>Intake • Exhaust • Engine</small></a>
+      <a href="{{ link('search') }}?q=LS"><i>GM</i><b>LS Gen III / IV</b><small>Cam • Heads • Bottom End</small></a>
+      <a href="{{ link('search') }}?q=LT"><i>GM</i><b>LT Gen V</b><small>Fueling • AFM • Boost</small></a>
+      <a href="{{ link('search') }}?q=Coyote"><i>FORD</i><b>Coyote 5.0</b><small>Intake • Timing • Boost</small></a>
+      <a href="{{ link('search') }}?q=Godzilla"><i>FORD</i><b>Godzilla 7.3</b><small>Cam • Valvetrain • Swap</small></a>
+      <a href="{{ link('search') }}?q=1FZ"><i>TOYOTA</i><b>1FZ-FE</b><small>Turbo • Fuel • Internals</small></a>
+      <a href="{{ link('search') }}?q=2JZ"><i>TOYOTA</i><b>2JZ</b><small>Turbo • Fuel • Engine</small></a>
+    </div>
+  </div></section>
+
+  <section class="pmp-section pmp-section--alt"><div class="pmp-shell">
+    <header class="pmp-section__head"><div><span class="pmp-eyebrow">SHOP BY PART</span><h2>كل ما يحتاجه مشروعك</h2></div><a href="{{ link('products') }}">جميع القطع</a></header>
+    <div class="pmp-parts-grid">
+      <a href="{{ link('search') }}?q=camshaft">كامات ورافعات <small>Camshafts & Lifters</small></a><a href="{{ link('search') }}?q=valvetrain">نظام الصمامات <small>Valvetrain</small></a><a href="{{ link('search') }}?q=piston">بساتم وأذرعة <small>Pistons & Rods</small></a><a href="{{ link('search') }}?q=gasket">وجهات وجوانات <small>Gaskets</small></a>
+      <a href="{{ link('search') }}?q=intake">سحب الهواء <small>Intake</small></a><a href="{{ link('search') }}?q=exhaust">العادم والهدرز <small>Exhaust</small></a><a href="{{ link('search') }}?q=fuel">نظام الوقود <small>Fuel System</small></a><a href="{{ link('search') }}?q=oil%20pump">طرمبات الزيت <small>Oil Pumps</small></a>
+      <a href="{{ link('search') }}?q=timing">التايمنج <small>Timing</small></a><a href="{{ link('search') }}?q=ARP">مسامير ARP <small>Fasteners</small></a><a href="{{ link('search') }}?q=transmission">القير والدفرنس <small>Drivetrain</small></a><a href="{{ link('search') }}?q=suspension">التعليق والثبات <small>Suspension</small></a>
+    </div>
+  </div></section>
+
+  <section class="pmp-section"><div class="pmp-shell pmp-promo-grid">
+    <a class="pmp-promo pmp-promo--hemi" href="{{ link('search') }}?q=HEMI"><span>HEMI PERFORMANCE</span><h3>قوة موبار الحقيقية</h3><p>كامات، MDS Delete، صمامات وقطع داخلية.</p><b>تسوق HEMI</b></a>
+    <a class="pmp-promo pmp-promo--ls" href="{{ link('search') }}?q=LS"><span>LS / LT PERFORMANCE</span><h3>ابنِ محركك بثقة</h3><p>من الكامة إلى الوقود والشحن الجبري.</p><b>تسوق LS / LT</b></a>
+  </div></section>
+
+  <section class="pmp-section pmp-section--alt"><div class="pmp-shell">
+    <header class="pmp-section__head"><div><span class="pmp-eyebrow">TOP BRANDS</span><h2>شركات الأداء المعروفة</h2></div></header>
+    <div class="pmp-brand-grid">
+      {% for brand in ['BTR','aFe POWER','ARP','MELLING','HOLLEY','COMP CAMS','PAC RACING','TEXAS SPEED','FAST','NOS','AIR LIFT','DIABLOSPORT','ENGINETECH','EAGLE','DART','VCM','SPOOL','POINT ONE','STAINLESS WORKS','AMS'] %}
+        <a href="{{ link('search') }}?q={{ brand|url_encode }}">{{ brand }}</a>
+      {% endfor %}
+    </div>
+  </div></section>
+
+  <section class="pmp-section pmp-products"><div class="pmp-shell"><header class="pmp-section__head"><div><span class="pmp-eyebrow">LATEST PRODUCTS</span><h2>وصل حديثاً إلى PMP</h2></div><a href="{{ link('products') }}">جميع المنتجات</a></header><salla-products-list source="latest"></salla-products-list></div></section>
+</div>
+{% endblock %}
+{% block scripts %}
+    <script defer src="{{ 'home.js' | asset }}"></script>
+{% endblock %}

@@ -14,7 +14,8 @@ Last updated: 2026-07-21 (Asia/Riyadh)
 - Salla now reports the former HTML bundle block as unsupported and no longer returns it in the active homepage blocks.
 - The active Raed preview therefore contains only its built-in latest-products area; the native PMP bundle is still absent from the available bundle catalog.
 - Do not rebuild the storefront with Raed blocks: the merchant explicitly requires an original theme.
-- A complete standalone Twilight theme was created in `/workspace/scratch/7a91e571eafb/pmp-full-theme`, production-built successfully, and checkpointed at local commit `a14c4a3c08e318c829accc938b26b118c6171ffc`.
+- A complete standalone Twilight theme was recovered from the former scratch workspace and is now stored under `theme/` in this repository.
+- The recovered source corresponds to local commits `a14c4a3c08e318c829accc938b26b118c6171ffc` and `f0947f6`, and its production build was revalidated on 2026-07-21.
 - The next publishing action is to import the standalone theme's root `twilight.json` through the Salla Partners theme flow or link it with Salla CLI; homepage MCP cannot register theme source code.
 
 ## Completed
@@ -43,6 +44,6 @@ Last updated: 2026-07-21 (Asia/Riyadh)
 ## Next execution point
 
 1. The component build and pricing tests pass, and the tested native bundle has been published to GitHub.
-2. Publish the standalone full theme through Salla Partners/CLI and preview the generated version on the PMP store.
+2. Publish the standalone full theme in `theme/` through Salla Partners/CLI and preview the generated version on the PMP store.
 3. Use `salla/homepage-live.html` only as a reference/fallback; Salla no longer supports its former HTML component on the active theme.
 4. Import real products only after obtaining an authorized supplier feed/export containing SKU, cost, weight/dimensions, HS code, images, stock, and fitment. Keep cost fields private.
