@@ -1,0 +1,17 @@
+{#
+| Variable         | Type    | Description                     |
+|------------------|---------|---------------------------------|
+| cart             | object  |                                 |
+| cart.items_count | int     |                                 |
+| cart.total       | string  | Formatted total ex: "١٠٠ ر.س"   |
+#}
+<header class="pmp-header">
+  <div class="pmp-header__bar"><div class="pmp-shell"><span>قطع أداء أصلية ومختارة</span><span>شحن إلى جميع مناطق المملكة</span><span>دعم فني قبل الشراء</span></div></div>
+  <div id="mainnav" class="pmp-header__main"><div class="pmp-shell">
+    <a class="lg:hidden mburger mburger--collapse pmp-menu-button" href="#mobile-menu" aria-label="فتح القائمة"><i class="sicon-menu"></i></a>
+    <a class="pmp-logo" href="{{ store.url }}"><img fetchpriority="high" loading="eager" src="{{ store.logo|cdn(175) }}" alt="{{ store.name }} logo"><span><b>PMP</b><small>POWER MATCH PERFORMANCE</small></span></a>
+    <div class="pmp-header__search"><salla-search inline oval height="44"></salla-search></div>
+    <nav class="pmp-header__links"><a href="{{ link('products') }}">المنتجات</a><a href="{{ link('brands') }}">الشركات</a><custom-main-menu></custom-main-menu></nav>
+    <div class="pmp-header__actions"><salla-user-menu avatar-only show-header show-trigger></salla-user-menu><salla-cart-summary><i slot="icon" class="sicon-shopping-bag"></i></salla-cart-summary></div>
+  </div></div>
+</header>
