@@ -1,4 +1,15 @@
-# gptghf
+# PMP Salla Storefront
+
+This repository contains the recovered PMP storefront work in two forms:
+
+- `theme/`: the complete production-built Salla Twilight theme.
+- `src/components/pmp-storefront/`: the earlier standalone Twilight Bundle component.
+- `salla/homepage-live.html`: the legacy homepage bridge retained only as a reference/fallback.
+
+The full theme is the active implementation path. See `docs/PROGRESS.md` and
+`theme/PMP-CHECKPOINT.md` for the current publishing checkpoint.
+
+## Legacy bundle starter notes
 
 
 
