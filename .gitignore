@@ -1,0 +1,9 @@
+node_modules/
+.salla-temp/
+.DS_Store
+dist/*.csv
+data/product-costs*.json
+assets/banners/*.png
+pmp-home-*.png
+templates/
+templates-thumbs/

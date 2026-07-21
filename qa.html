@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMP Storefront QA</title>
+    <style>html,body{margin:0;background:#08090b}</style>
+  </head>
+  <body>
+    <salla-pmp-storefront id="storefront"></salla-pmp-storefront>
+    <script type="module">
+      import '/src/components/pmp-storefront/index.ts';
+      const storefront = document.getElementById('storefront');
+      storefront.config = {
+        hero_image: '/assets/banners/pmp-hero-performance-v2.webp',
+        hemi_banner: '/assets/banners/pmp-hemi-category-v1.webp',
+        ls_banner: '/assets/banners/pmp-ls-lt-category-v1.webp',
+        support_email: 'info@pmpperformance.online',
+        catalog_url: '/search',
+      };
+    </script>
+  </body>
+</html>

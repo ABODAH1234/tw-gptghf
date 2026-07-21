@@ -1,14 +1,88 @@
 {
-    "name": {
-        "ar": "gpt",
-        "en": "gptghf"
+  "name": {
+    "ar": "واجهة باور ماتش بيرفورمنس",
+    "en": "PMP Performance Storefront"
+  },
+  "description": {
+    "ar": "واجهة متجر أداء مخصصة بهوية PMP تشمل البحث بالمركبة والمحرك والأقسام والعلامات التجارية",
+    "en": "Original PMP performance storefront with vehicle and engine fitment search, categories and brands"
     },
-    "description": {
-        "ar": "",
-        "en": ""
-    },
-    "author_email": "abdulrhman.s.algamdi.22@gmail.com",
-    "support_url": "https://portal.salla.partners/auth/cli?identify=lc4EI2INsmZh2HzpsZ3yYizfEKwruiMZtur66hY4toADicakmhvkshp8dEoTLrPt",
+    "author_email": "info@pmpperformance.online",
+    "support_url": "https://pmpperformance.online",
     "repository": "https://github.com/ABODAH1234/tw-gptghf",
-    "components": []
+  "components": [
+    {
+      "name": "pmp-storefront",
+      "title": "واجهة PMP الرئيسية",
+      "key": "e57a0f2a-1f9b-4f6d-9870-8a0f5e46f021",
+      "icon": "sicon-store",
+      "image": "https://raw.githubusercontent.com/ABODAH1234/tw-gptghf/main/assets/pmp-hero-v1.png",
+      "description": "واجهة رئيسية متكاملة للبحث والتصفح حسب المحرك والمركبة والقسم والعلامة التجارية",
+      "fields": [
+        {
+          "id": "hero_image",
+          "icon": "sicon-image",
+          "type": "string",
+          "label": "بنر الواجهة الرئيسي",
+          "format": "image",
+          "required": false,
+          "value": "https://raw.githubusercontent.com/ABODAH1234/tw-gptghf/main/assets/banners/pmp-hero-performance-v2.webp"
+        },
+        {
+          "id": "hemi_banner",
+          "icon": "sicon-image",
+          "type": "string",
+          "label": "بنر قسم HEMI",
+          "format": "image",
+          "required": false,
+          "value": "https://raw.githubusercontent.com/ABODAH1234/tw-gptghf/main/assets/banners/pmp-hemi-category-v1.webp"
+        },
+        {
+          "id": "ls_banner",
+          "icon": "sicon-image",
+          "type": "string",
+          "label": "بنر قسم LS / LT",
+          "format": "image",
+          "required": false,
+          "value": "https://raw.githubusercontent.com/ABODAH1234/tw-gptghf/main/assets/banners/pmp-ls-lt-category-v1.webp"
+        },
+        {
+          "id": "whatsapp",
+          "icon": "sicon-whatsapp",
+          "type": "string",
+          "label": "رقم واتساب بصيغة دولية",
+          "format": "text",
+          "required": false,
+          "value": ""
+        },
+        {
+          "id": "support_email",
+          "icon": "sicon-mail",
+          "type": "string",
+          "label": "بريد خدمة العملاء",
+          "format": "email",
+          "required": false,
+          "value": "info@pmpperformance.online"
+        },
+        {
+          "id": "commercial_registration",
+          "icon": "sicon-file",
+          "type": "string",
+          "label": "رقم السجل التجاري",
+          "format": "text",
+          "required": false,
+          "value": ""
+        },
+        {
+          "id": "catalog_url",
+          "icon": "sicon-link",
+          "type": "string",
+          "label": "رابط البحث في المتجر",
+          "format": "url",
+          "required": false,
+          "value": "/search"
+        }
+      ]
+    }
+  ]
 }
