@@ -2,6 +2,12 @@
 
 Last updated: 2026-07-21 (Asia/Riyadh)
 
+## Live homepage bridge
+
+- `salla/homepage-live.html` is the self-contained Arabic RTL homepage used for immediate Salla deployment while native Twilight bundle registration propagates.
+- It includes the generated PMP hero, HEMI and LS/LT banners, store search, engine families, parts taxonomy, brands and support CTA.
+- Native component source and the private-input pricing engine remain the long-term implementation.
+
 ## Completed
 
 - Recovered the correct Salla Twilight Bundle repository.
@@ -21,8 +27,7 @@ Last updated: 2026-07-21 (Asia/Riyadh)
 
 ## Next execution point
 
-1. Finish dependency installation and run `npm run build` plus `npm run test:pricing`.
-2. Preview the storefront, connect the three banner asset URLs in the Salla component settings, and fix responsive details.
-3. Push the tested source to the linked GitHub repository so Salla can receive the bundle update.
+1. The component build and pricing tests pass, and the tested native bundle has been published to GitHub.
+2. Deploy and verify `salla/homepage-live.html` in the currently active Salla theme as the immediate live bridge.
+3. Replace the bridge with the native `salla-pmp-storefront` component once Salla registers the updated bundle.
 4. Import real products only after obtaining an authorized supplier feed/export containing SKU, cost, weight/dimensions, HS code, images, stock, and fitment. Keep cost fields private.
-5. Upload/import the priced CSV through the connected Salla surface when the Salla MCP becomes available in the active session.
