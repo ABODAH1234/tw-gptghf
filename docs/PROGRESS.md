@@ -2,6 +2,13 @@
 
 Last updated: 2026-07-21 (Asia/Riyadh)
 
+## Recovery publication
+
+- The recovered full theme is preserved on branch `agent/recover-full-pmp-theme`.
+- Draft PR: `https://github.com/ABODAH1234/tw-gptghf/pull/2`.
+- Production builds for both the full theme and standalone component pass; pricing tests pass 2/2.
+- Salla Partners CLI upload is currently blocked because `api.salla.dev/partners/v1` is unreachable from the active runtime. The merchant storefront connection remains healthy, and no live theme activation has been attempted.
+
 ## Live homepage bridge
 
 - `salla/homepage-live.html` is the self-contained Arabic RTL homepage used for immediate Salla deployment while native Twilight bundle registration propagates.
